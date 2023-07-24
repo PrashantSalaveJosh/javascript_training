@@ -10,19 +10,15 @@ let age = 20;
 const ageChecker = (inputAge) => {
   if (inputAge < 0) {
     console.log("Age can not be negative");
-  }
-  else if (inputAge <= 12) {
+  } else if (inputAge <= 12) {
     console.log("Child");
-  }
-  else if (inputAge <= 18){
+  } else if (inputAge <= 18) {
     console.log("Teen");
-  }
-  else if (inputAge > 18) {
+  } else if (inputAge > 18) {
     console.log("Adult");
-  }
-  else {
+  } else {
     console.log("Invalid Input");
   }
-}
+};
 
 ageChecker(age);

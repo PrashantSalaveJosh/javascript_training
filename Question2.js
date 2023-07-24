@@ -8,24 +8,23 @@ Print adult to the console if age is above 18
 let age = 25;
 
 const ageChecker = (inputAge) => {
-  switch(true) {
-    case (inputAge < 0):
+  switch (true) {
+    case inputAge < 0:
       console.log("Age can not be negative");
       break;
-    case (inputAge <= 12):
+    case inputAge <= 12:
       console.log("Child");
       break;
-    case (inputAge <= 18):
+    case inputAge <= 18:
       console.log("Teen");
       break;
-    case (inputAge > 18):
+    case inputAge > 18:
       console.log("Adult");
       break;
     default:
       console.log("Invalid Input");
       break;
   }
-}
+};
 
 ageChecker(age);
-

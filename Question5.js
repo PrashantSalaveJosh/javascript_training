@@ -5,15 +5,17 @@
  * 
  */
 
-function abc(){
-  for(let i=0;i<3;i++){
-    if(i==1){
-        console.log("gotta");
-        // return;
-        break;
+function abc() {
+  for (let i = 0; i < 3; i++) {
+    if (i == 1) {
+      console.log("gotta");
+      // return;
+      break;
     }
   }
-  console.log("if used return then not executed...use break intead to get this executed");
+  console.log(
+    "if used return then not executed...use break intead to get this executed"
+  );
 }
 
 abc();

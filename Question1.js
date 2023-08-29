@@ -74,11 +74,13 @@ const employeeDetails = [
 ];
 
 const filterByName = (name) => {
-  let reqEmployees = employeeDetails.filter((emp) => emp.first_name === name);
+  let reqEmployees = employeeDetails.filter((emp) =>
+    emp.first_name.includes(name)
+  );
   return reqEmployees;
 };
 
-console.log(filterByName("Townie"));
+console.log(filterByName("Nic"));
 
 const getEmailIds = () => employeeDetails.map((emp) => emp.email);
 
